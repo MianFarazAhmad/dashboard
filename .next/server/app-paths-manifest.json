@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/transaction/page": "app/transaction/page.js",
+  "/payment/page": "app/payment/page.js",
+  "/accounts/page": "app/accounts/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}
