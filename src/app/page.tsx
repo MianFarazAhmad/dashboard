@@ -45,7 +45,7 @@ function ProductList(): JSX.Element {
               <th className="py-2 px-4 border-b">Price</th>
               <th className="py-2 px-4 border-b">Stock</th>
 
-              <th className="py-2 px-4 border-b">Actions</th>
+              <th className="py-2 px-4 border-b">Rating</th>
             </tr>
           </thead>
           <tbody>
