@@ -85,7 +85,8 @@ const Products = () => {
         <input
           type="number"
           name="price"
-          value={newProduct.price}
+          value={newProduct.price|| ''}
+          
           className="w-full mb-5 border border-slate-200 rounded-lg py-3 px-5 outline-none  bg-transparent"
           onChange={handleInputChange}
           placeholder="Price"
@@ -93,7 +94,7 @@ const Products = () => {
         <input
           type="number"
           name="stock"
-          value={newProduct.stock}
+          value={newProduct.stock || ''}
           onChange={handleInputChange}
           className="w-full mb-5 border border-slate-200 rounded-lg py-3 px-5 outline-none  bg-transparent"
           placeholder="Stock"
@@ -101,7 +102,7 @@ const Products = () => {
         <input
           type="number"
           name="rating"
-          value={newProduct.rating}
+          value={newProduct.rating || ''}
           onChange={handleInputChange}
           className="w-full mb-5 border border-slate-200 rounded-lg py-3 px-5 outline-none  bg-transparent"
           placeholder="Rating"
