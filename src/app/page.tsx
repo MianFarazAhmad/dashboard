@@ -1,7 +1,8 @@
 import React from 'react'
-import ProductList from './pages/home/ProductList'
-import UserChart from './pages/home/UserChart'
-import SaleChart from './pages/home/SaleChart'
+import UserChart from './home/UserChart'
+import ProductList from './home/ProductList'
+import SaleChart from './home/SaleChart'
+
 
 
 function Index() {
