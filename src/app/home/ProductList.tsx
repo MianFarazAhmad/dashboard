@@ -1,25 +1,64 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from 'react';
 interface Product {
   id: number;
-  image: any;
-  stock: number;
-  price: number;
   title: string;
-  body: string;
+  price: number;
+  stock: number;
   rating: number;
 }
-function ProductList(): JSX.Element {
+
+const Product = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [search, setSearch] = useState<string>("");
+  const [newProduct, setNewProduct] = useState({
+    title: '',
+    price: 0,
+    stock: 0,
+    rating: 0,
+  });
+
+  const fetchProducts = async () => {
+    const response = await fetch('https://dummyjson.com/products');
+    const data = await response.json();
+    setProducts(data.products);
+  };
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setNewProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+  };
+
+  const addProduct = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    try {
+      const response = await fetch('https://dummyjson.com/products/add', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newProduct),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to add product');
+      }
+
+      const data = await response.json();
+      console.log(data);
+      fetchProducts();
+      setNewProduct({
+        title: '',
+        price: 0,
+        stock: 0,
+        rating: 0,
+      });
+    } catch (error) {
+      console.error('Error:', error);
+
+    }
+  };
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data.products);
-      })
-      .catch((error) => console.error("Error fetching products:", error));
+    fetchProducts();
   }, []);
   const SearchFilter = (event: any) => {
     setSearch(event.target.value);
@@ -29,8 +68,42 @@ function ProductList(): JSX.Element {
   );
   return (
     <div>
-      <div className="">
-      <h2 className="text-2xl font-semibold mb-4">Product List</h2>
+      <div>
+        <h2>Add Product</h2>
+        <form onSubmit={addProduct}>
+          <input
+            type="text"
+            name="title"
+            value={newProduct.title}
+            onChange={handleInputChange}
+            placeholder="Product Name"
+          />
+          <input
+            type="number"
+            name="price"
+            value={newProduct.price}
+            onChange={handleInputChange}
+            placeholder="Price"
+          />
+          <input
+            type="number"
+            name="stock"
+            value={newProduct.stock}
+            onChange={handleInputChange}
+            placeholder="Stock"
+          />
+          <input
+            type="number"
+            name="rating"
+            value={newProduct.rating}
+            onChange={handleInputChange}
+            placeholder="Rating"
+          />
+          <button type="submit">Add Product</button>
+        </form>
+      </div>
+      <div>
+        <h2 className="text-2xl font-semibold mb-4">Product List</h2>
         <input
           type="text"
           value={search}
@@ -43,6 +116,7 @@ function ProductList(): JSX.Element {
             <tr className="text-left">
               <th className="py-2 px-4 border-b">Product Name</th>
               <th className="py-2 px-4 border-b">Price</th>
+              
               <th className="py-2 px-4 border-b">Stock</th>
 
               <th className="py-2 px-4 border-b">Rating</th>
@@ -66,4 +140,4 @@ function ProductList(): JSX.Element {
   );
 }
 
-export default ProductList;
+export default Product;
