@@ -21,3 +21,16 @@
     text-wrap: balance;
   }
 }
+@media (max-width: 575px) {
+  /* Your mobile-specific CSS here */
+  .xs-d-none {
+display: none;
+  }
+}
+@media (min-width: 576px) {
+  /* Your mobile-specific CSS here */
+  .md-hidden {
+display: none;
+  }
+}
+/* styles/globals.css or wherever you keep global styles */

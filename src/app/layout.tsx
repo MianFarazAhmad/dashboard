@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito_Sans } from 'next/font/google';
 import "./globals.css";
-import Header from "./layout/Header";
-import Footer from "./layout/Footer";
 import Sidebar from "./components/sidebar";
+import Navbar from "./layout/navbar";
 
-
-const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito_Sans({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-nunito',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,23 +18,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="flex h-screen bg-[#F5F5F9] ">
-          <div className=" flex h-screen  ">
+    <html lang="en" className={nunito.variable}>
+      <body className="font-nunito">
+        <div className="xs-d-none">
           <Sidebar />
-          </div>
-        
-          <div className=" flex-1 overflow-y-auto px-5   ">
-            <Header/>
-            {children}
-            <Footer/>
-          </div>
         </div>
+        <main className="md:ml-[240px] bg-[#F4F4F4] min-h-screen">
+          <div className="xs-d-none">
+            <Navbar />
+          </div>
+          {children}
+        </main>
       </body>
     </html>
   );

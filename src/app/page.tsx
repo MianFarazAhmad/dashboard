@@ -1,31 +1,50 @@
-import React from 'react'
-import UserChart from './home/UserChart'
-import SaleChart from './home/SaleChart'
-import Product from './home/Product'
-
-
-
-function Index() {
+'use client'
+import { useState } from "react";
+import Image from "next/image";
+import Cards from "./components/cards";
+import Filter from "./components/filter";
+import MobileSidebar from "./components/mobileSidebar";
+import List from "./components/list";
+import ComplianceChart from "./components/chart";
+import Activity from "./components/activity";
+import ReminderJobsPanel from "./components/upcoming";
+export default function Home() {
+   const [isSidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <div >
-      <div className='grid grid-flow-col grid-cols-2  mt-5   space-x-2 '>
-        <div className='bg-white rounded-lg p-3'>
-        <UserChart/>
-        </div>
-        <div className='bg-white rounded-lg p-3'>
-        <SaleChart/>
-</div>
-   
-      
+ <div className="px-6" >
+    <div className="flex md-hidden">
+      <button
+        className="p-4  flex items-center "
+        onClick={() => setSidebarOpen(true)}
+      >
+         <Image
+                      src="/icon/solid.png"
+                      alt="Dashboard Icon"
+                      width={38}
+                      height={38}
+                    />
+   <div className="  font-medium text-[22px] pl-4">  Dashboard  </div> 
+      </button>
 
-      </div>
-      <div className='my-5 bg-white rounded-lg p-4'>
-        <Product/>
-    
-      </div>
-      
+      <MobileSidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)} />
     </div>
-  )
-}
+      <div className='xs-d-none '>
+<Filter/>
+</div>
+<Cards/>
+<div className="grid grid-cols-1 md:grid-cols-5 pt-5 gap-2">
+  <div className="md:col-span-3">
+    <ComplianceChart />
+  </div>
+  <div className="md:col-span-2">
+    <List />
+  </div>
+</div>
 
-export default Index
+<Activity/>
+
+<ReminderJobsPanel/>
+
+ </div>
+  );
+}
