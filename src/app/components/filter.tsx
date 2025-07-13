@@ -8,7 +8,7 @@ export default function Filter() {
     <div className="flex justify-between items-center pt-5">
       {/* Left Side */}
       <div className="flex items-center">
-        <p className="mr-4 font-semibold text-[18px]">Filter by Company:</p>
+        <p className="mr-4 font-semibold text-18">Filter by Company:</p>
 
         <div className="relative flex items-center w-fit">
           {/* Select Dropdown */}

@@ -23,7 +23,7 @@ export default function Home() {
                       width={38}
                       height={38}
                     />
-   <div className="  font-medium text-[22px] pl-4">  Dashboard  </div> 
+   <div className="  font-medium text-22 pl-4">  Dashboard  </div> 
       </button>
 
       <MobileSidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)} />
