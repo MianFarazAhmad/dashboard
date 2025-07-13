@@ -101,7 +101,7 @@ export default function ReminderJobsPanel() {
             </div>
             <p className="text-xs text-gray-600 mb-2">Client called to add a new driver. Need to collect documents and add to system.</p>
             <div className="flex items-center justify-between">
-              <div className="text-[10px] text-gray-600">
+              <div className="text-10 text-gray-600">
                 <span className=" px-2 py-0.5 rounded bg-brand2">JD</span> Assigned to: Jane Doe
               </div>
               <div className="space-x-2">
