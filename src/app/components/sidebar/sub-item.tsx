@@ -5,6 +5,8 @@ import React, { useMemo } from "react";
 interface ISubItem {
   name: string;
   path: string;
+  icon: () => JSX.Element;
+
 }
 
 const SubMenuItem = ({ item }: { item: ISubItem }) => {

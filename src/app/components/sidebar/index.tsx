@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import SidebarItem from './item';
+import Link from 'next/link';
 
 interface ISubItem {
   name: string;
@@ -8,6 +9,7 @@ interface ISubItem {
 }
 
 interface ISidebarItem {
+  
   name: string;
   path: string;
   icon: () => JSX.Element;
@@ -64,14 +66,15 @@ const items: ISidebarItem[] = [
 
 const Sidebar = () => {
   return (
-    <aside className="w-[240px] bg-[#F0FAFE] h-screen flex flex-col justify-between fixed">
+    <aside className="w-[15rem] bg-[#F0FAFE] h-screen flex flex-col justify-between fixed">
     {/* Top Logo Section */}
     <div>
       <div className="">
-        <img src="/logo.png" alt="CTS Logo" className="" />
+           <Link href={'/'}>
+        <img src="/logo.png" alt="CTS Logo" className="" /></Link>
         <div className="absolute bottom-0 left-0 w-0 h-0 border-l-[240px] border-l-transparent border-b-[20px] border-b-[#eaf8ff]"></div>
       </div>
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col space-y-2 pt-4 ">
           {items.map((item, index) => (
             <SidebarItem key={index} item={item} />
           ))}

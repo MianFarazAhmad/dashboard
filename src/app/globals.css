@@ -21,13 +21,13 @@
     text-wrap: balance;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   /* Your mobile-specific CSS here */
   .xs-d-none {
 display: none;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   /* Your mobile-specific CSS here */
   .md-hidden {
 display: none;

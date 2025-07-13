@@ -27,7 +27,7 @@ export default function RootLayout({
         <div className="xs-d-none">
           <Sidebar />
         </div>
-        <main className="md:ml-[240px] bg-[#F4F4F4] min-h-screen">
+        <main className="lg:ml-[15rem] bg-[#F4F4F4] min-h-screen">
           <div className="xs-d-none">
             <Navbar />
           </div>
