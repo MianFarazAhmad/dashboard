@@ -9,42 +9,42 @@ import ComplianceChart from "./components/chart";
 import Activity from "./components/activity";
 import ReminderJobsPanel from "./components/upcoming";
 export default function Home() {
-   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
   return (
- <div className="px-6" >
-    <div className="flex md-hidden">
-      <button
-        className="p-4  flex items-center "
-        onClick={() => setSidebarOpen(true)}
-      >
-         <Image
-                      src="/icon/solid.png"
-                      alt="Dashboard Icon"
-                      width={38}
-                      height={38}
-                    />
-   <div className="  font-medium text-22 pl-4">  Dashboard  </div> 
-      </button>
+    <div className="px-6" >
+      <div className="flex md-hidden">
+        <button
+          className="p-4  flex items-center "
+          onClick={() => setSidebarOpen(true)}
+        >
+          <Image
+            src="/icon/solid.png"
+            alt="Dashboard Icon"
+            width={38}
+            height={38}
+          />
+          <div className="  font-medium text-22 pl-4">  Dashboard  </div>
+        </button>
 
-      <MobileSidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)} />
-    </div>
+        <MobileSidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)} />
+      </div>
       <div className='xs-d-none '>
-<Filter/>
-</div>
-<Cards/>
-<div className="grid grid-cols-1 md:grid-cols-5 pt-5 gap-2">
-  <div className="md:col-span-3">
-    <ComplianceChart />
-  </div>
-  <div className="md:col-span-2">
-    <List />
-  </div>
-</div>
+        <Filter />
+      </div>
+      <Cards />
+      <div className="grid grid-cols-1 md:grid-cols-5 pt-5 gap-2">
+        <div className="md:col-span-3">
+          <ComplianceChart />
+        </div>
+        <div className="md:col-span-2">
+          <List />
+        </div>
+      </div>
 
-<Activity/>
+      <Activity />
 
-<ReminderJobsPanel/>
+      <ReminderJobsPanel />
 
- </div>
+    </div>
   );
 }
