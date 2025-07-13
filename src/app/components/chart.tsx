@@ -33,9 +33,9 @@ const data: ComplianceData[] = [
 
 export default function ComplianceChart() {
   return (
-    <div className="bg-white rounded-lg text-[14px] shadow w-full mx-auto">
+    <div className="bg-white rounded-lg text-14 shadow w-full mx-auto">
       <div className="px-6   pt-6 mb-2 flex justify-between">
-        <h2 className="font-semibold text-[18px] mb-1">Key Compliance Metrics</h2>
+        <h2 className="font-semibold text-18 mb-1">Key Compliance Metrics</h2>
         <div className="flex xs-d-none  items-center gap-6 text-sm text-gray-600">
           <div className="flex justify-end px-3 items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-[#555555CC]" />
@@ -57,7 +57,7 @@ export default function ComplianceChart() {
             <span className=' font-4 text-12'>Violations</span>
           </div>
         </div>
-      <div className="w-full mt-0 mr-0 mb-0 -ml-5 pr-0 h-[290px]">
+      <div className="w-full mt-0 mr-0 mb-0 -ml-5 pr-0 h-[18.125rem]">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}

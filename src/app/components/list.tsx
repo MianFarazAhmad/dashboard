@@ -23,7 +23,7 @@ export default function List() {
             <p className="text-14 font-6">John Smith</p>
             <p className="font-4 text-12 text-gray-500">Driver License • ABC Trucking</p>
           </div>
-          <span className="w-[64px] h-[24px] flex items-center justify-center  text-12 font-6 text-red-500 bg-red-50 rounded-md">
+          <span className="w-[4rem] h-[1.5rem] flex items-center justify-center  text-12 font-6 text-red-500 bg-red-50 rounded-md">
             Urgent
           </span>
         </li>
@@ -32,7 +32,7 @@ export default function List() {
             <p className="text-14 font-6">Robert Johnson</p>
             <p className="font-4 text-12 text-gray-500">Medical Certificate • XYZ Transport</p>
           </div>
-          <span className="w-[64px] h-[24px] flex items-center justify-center  text-12 font-6  bg-brand1  text-[#653CF9]  rounded-md">
+          <span className="w-[4rem] h-[1.5rem] flex items-center justify-center  text-12 font-6  bg-brand1  text-[#653CF9]  rounded-md">
             Soon
           </span>
         </li>
@@ -41,7 +41,7 @@ export default function List() {
             <p className="text-14 font-6">ABC Trucking</p>
             <p className="font-4 text-12 text-gray-500">New Driver • ABC Trucking</p>
           </div>
-            <span className="w-[64px] h-[24px] flex items-center justify-center  text-12 font-6  bg-brand1  text-[#653CF9]  rounded-md">
+            <span className="w-[4rem] h-[1.5rem] flex items-center justify-center  text-12 font-6  bg-brand1  text-[#653CF9]  rounded-md">
             Soon
           </span>
         </li>
@@ -50,7 +50,7 @@ export default function List() {
             <p className="text-14 font-6">Truck #T‑123</p>
             <p className="font-4 text-12 text-gray-500">Vehicle Inspection • XYZ Transport</p>
           </div>
-            <span className="w-[64px] h-[24px] flex items-center justify-center  text-12 font-6  bg-brand1  text-[#653CF9]  rounded-md">
+            <span className="w-[4rem] h-[1.5rem] flex items-center justify-center  text-12 font-6  bg-brand1  text-[#653CF9]  rounded-md">
             Soon
           </span>
         </li>

@@ -50,7 +50,7 @@ const SidebarItem = ({ item }: { item: ISidebarItem }) => {
 >
   {/* ✅ Left vertical bar when active */}
   {isActive && (
-    <div className="absolute left-0 top-0 h-full w-[6px] bg-[#00D3FF] rounded-tr-full rounded-br-full" />
+    <div className="absolute left-0 top-0 h-full w-[0.375rem] bg-[#00D3FF] rounded-tr-full rounded-br-full" />
   )}
 
   <div className="flex items-center ml-4  space-x-2">
