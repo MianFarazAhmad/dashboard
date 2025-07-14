@@ -57,7 +57,7 @@ export default function activity() {
                 <span className="text-xs flex text-gray-400">
                   {" "}
                   <img
-                    src="/icon/cal.png"
+                    src="/icon/cal.svg"
                     alt="User"
                     className="w-4 h-4 mr-2 rounded-full  object-cover"
                   />
@@ -66,7 +66,7 @@ export default function activity() {
                 <span className="text-xs flex text-gray-400">
                   {" "}
                   <img
-                    src="/icon/mes.png"
+                    src="/icon/mes.svg"
                     alt="User"
                     className="w-4 h-4 ml-2 mr-2 rounded-full object-cover"
                   />
@@ -101,13 +101,15 @@ export default function activity() {
 
             <div className=" items-center xs-d-none space-x-3">
               <div className="flex justify-end mb-3">
-                <span className="text-xs text-brand font-7 text-12 border border-brand bg-brand1 rounded px-2 py-0.5">Accepted by Maria Garcia</span>
+                <span className="text-xs text-brand font-7 text-12 border border-brand bg-brand1 rounded px-2 py-0.5">
+                  
+                  Accepted by Maria Garcia</span>
               </div>
               <div className="flex">
                 <span className="text-xs flex text-gray-400">
                   {" "}
                   <img
-                    src="/icon/cal.png"
+                    src="/icon/cal.svg"
                     alt="User"
                     className="w-4  h-4  mr-2 rounded-full object-cover"
                   />
@@ -116,7 +118,7 @@ export default function activity() {
                 <span className="text-xs ml-2 flex text-gray-400">
                   {" "}
                   <img
-                    src="/icon/mes.png"
+                    src="/icon/mes.svg"
                     alt="User"
                     className="w-4 h-4  mr-2 rounded-full object-cover"
                   />
@@ -158,7 +160,7 @@ export default function activity() {
                 <span className="text-xs flex text-gray-400">
                   {" "}
                   <img
-                    src="/icon/cal.png"
+                    src="/icon/cal.svg"
                     alt="User"
                     className="w-4 h-4  mr-2 rounded-full object-cover"
                   />
@@ -167,7 +169,7 @@ export default function activity() {
                 <span className="font-5 text-12 flex text-gray-400">
                   {" "}
                   <img
-                    src="/icon/mes.png"
+                    src="/icon/mes.svg"
                     alt="User"
                     className="w-4 font-5 text-12 h-4 ml-2 mr-2 rounded-full object-cover"
                   />

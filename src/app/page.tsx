@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Image from "next/image";
 import Cards from "./components/cards";
 import Filter from "./components/filter";
@@ -8,8 +8,14 @@ import List from "./components/list";
 import ComplianceChart from "./components/chart";
 import Activity from "./components/activity";
 import ReminderJobsPanel from "./components/upcoming";
+import { useNavbarTitle } from './nav/NavbarTitleContext';
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+    const { setTitle } = useNavbarTitle();
+
+  useEffect(() => {
+    setTitle('Dashboard');
+  }, []);
   return (
     <div className="px-6" >
       <div className="flex md-hidden">

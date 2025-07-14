@@ -54,7 +54,11 @@ const SidebarItem = ({ item }: { item: ISidebarItem }) => {
   )}
 
   <div className="flex items-center ml-4  space-x-2">
-    <Icon size={20} />
+   <Icon
+  className={isActive ? 'text-[#68cff7]' : 'text-gray-500 group-hover:text-[#68cff7]'}
+  size={27}
+/>
+
     <p className="text-15 font-6">{name}</p>
   </div>
 
