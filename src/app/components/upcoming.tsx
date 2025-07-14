@@ -27,7 +27,7 @@ export default function ReminderJobsPanel() {
          <div className="flex items-start border border-red-200 rounded border-l-[5px] border-l-red-400 bg-white p-3 rounded-l-lg">
   <div className="text-red-400 mr-3">
     <Image
-      src="/icon/bred.png"
+      src="/icon/bellred.svg"
       alt="Dashboard Icon"
       width={32}
       height={32}
@@ -51,7 +51,7 @@ export default function ReminderJobsPanel() {
           <div className="flex items-start border border-gray-200 p-3 rounded bg-white">
             <div className="text-yellow-500 mr-3">
                <Image
-                                   src="/icon/byello.png"
+                                   src="/icon/bellinfo.svg"
                                    alt="Dashboard Icon"
                                    width={32}
                                    height={32}
@@ -68,7 +68,7 @@ export default function ReminderJobsPanel() {
           <div className="flex items-start border border-gray-200 p-3 rounded bg-white">
             <div className="text-blue-500 mr-3">
              <Image
-                                   src="/icon/bb.png"
+                                   src="/icon/primary.svg"
                                    alt="Dashboard Icon"
                                    width={32}
                                    height={32}

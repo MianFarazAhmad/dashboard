@@ -24,7 +24,7 @@ export default function Home() {
           onClick={() => setSidebarOpen(true)}
         >
           <Image
-            src="/icon/solid.png"
+            src="/icon/solid.svg"
             alt="Dashboard Icon"
             width={38}
             height={38}

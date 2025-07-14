@@ -23,7 +23,7 @@ export default function activity() {
           <div className="flex py-4 items-center justify-between">
             <div className="flex  space-x-3">
               <img
-                src="/icon/lang.png"
+                src="/icon/lang.svg"
                 alt="User"
                 className="w-5 h-5 rounded-full object-cover"
               />
@@ -79,7 +79,7 @@ export default function activity() {
           <div className="flex py-4 items-center justify-between">
             <div className="flex  space-x-3">
               <img
-                src="/icon/lang.png"
+                src="/icon/lang.svg"
                 alt="User"
                 className="w-5 h-5 mt-2 rounded-full object-cover"
               />
@@ -130,7 +130,7 @@ export default function activity() {
           <div className="flex py-4 items-center justify-between">
             <div className="flex  space-x-3">
               <img
-                src="/icon/lang.png"
+                src="/icon/lang.svg"
                 alt="User"
                 className="w-5 h-5 rounded-full object-cover"
               />
@@ -192,10 +192,16 @@ export default function activity() {
           {/* Calendar icon */}
 
           <Image
-            src="/icon/sea.png"
+          className="mr-4"
+            src="/icon/searchprim.svg"
             alt="Dashboard Icon"
-            width={50}
-            height={50}
+            width={20}
+            height={20}
+          />  <Image
+            src="/icon/mes1.svg"
+            alt="Dashboard Icon"
+            width={20}
+            height={20}
           />
         </div>
 
