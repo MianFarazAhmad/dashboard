@@ -45,7 +45,7 @@ const items: ISidebarItem[] = [
   {
     name: 'Compliances',
     path: '/accounts',
-    icon: CompanyIcon,
+    icon: ComplianceIcon,
   },
   {
     name: 'Alerts',
