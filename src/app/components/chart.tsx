@@ -57,7 +57,7 @@ export default function ComplianceChart() {
             <span className=' font-4 text-12'>Violations</span>
           </div>
         </div>
-      <div className="w-full mt-0 mr-0 mb-0 -ml-5 pr-0 h-[18.125rem]">
+      <div className="w-full mt-0 mr-0 mb-0 mdv:h-[15rem] -ml-5 pr-0 md:h-[19rem] lg:h-[16.8rem] xl:h-[18.125rem]">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}

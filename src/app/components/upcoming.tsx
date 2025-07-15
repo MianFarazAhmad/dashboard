@@ -2,7 +2,7 @@
 import Image from "next/image";
 export default function ReminderJobsPanel() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[60%_40%] pt-5 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[60%_40%] pt-5 gap-2">
       {/* Upcoming Reminders */}
       <div className=" p-6 bg-white  rounded shadow">
         <div className="flex items-center justify-between mb-4">
@@ -122,7 +122,7 @@ export default function ReminderJobsPanel() {
               <div className="text-10 text-gray-600">
                 <span className=" px-2 py-0.5 rounded bg-brand2">JD</span> Assigned to: Current User
               </div>
-              <div className="space-x-2">
+              <div className="space-x-2 w-f">
                 <button className="text-xs border text-[#68CFF7] border-[#68CFF7]  px-3 py-1 rounded hover:bg-gray-300">Reassign</button>
                 <button className="text-xs bg-[#68CFF7] text-white px-3 py-1 rounded hover:bg-[#68CFF7]">Complete</button>
               </div>

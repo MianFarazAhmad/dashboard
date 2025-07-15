@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function activity() {
   return (
-    <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[60%_40%]  pt-5 gap-2">
+    <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[60%_40%]  pt-5 gap-2">
       {/* Recent Activity Section */}
       <div><div className="flex bg-white border   rounded-t-[0.625rem] border-[#191D311A] items-center ">
           <h2 className="font-6 text-18  flex-grow px-6 pt-2 pb-1">

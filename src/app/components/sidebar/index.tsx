@@ -66,7 +66,7 @@ const items: ISidebarItem[] = [
 
 const Sidebar = () => {
   return (
-    <aside className="w-[15rem] bg-[#F0FAFE] h-screen flex flex-col justify-between fixed">
+    <aside className="w-[15rem]  overflow-y-auto scrollbar-thin bg-[#F0FAFE] h-screen flex flex-col justify-between fixed">
     {/* Top Logo Section */}
     <div>
       <div className="">
@@ -74,14 +74,14 @@ const Sidebar = () => {
         <img src="/logo.png" alt="CTS Logo" className="" /></Link>
         <div className="absolute bottom-0 left-0 w-0 h-0 border-l-[240px] border-l-transparent border-b-[20px] border-b-[#eaf8ff]"></div>
       </div>
-        <div className="flex flex-col space-y-2 pt-4 ">
+        <div className="flex flex-col space-y-2 pt-4   ">
           {items.map((item, index) => (
             <SidebarItem key={index} item={item} />
           ))}
         </div>
       </div>
       <div className="border-t border-gray-300 p-4">
-        <button className="flex items-center gap-2 text-gray-600 hover:text-red-500 w-full">
+        <button className="flex items-center my-3 gap-2 text-gray-600 hover:text-red-500 ">
           <LogoutIcon />
           Logout
         </button>
