@@ -85,7 +85,7 @@ export default function ReminderJobsPanel() {
       </div>
 
       {/* Pending Jobs */}
-      <div className=" p-6 bg-white  rounded shadow">
+      <div className=" p-6 mdv:px-3 bg-white  rounded shadow">
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-6 text-18  flex-grow ">Pending Jobs</h2>
           <button className="flex items-center bg-gray-800 text-white px-3 h-8 text-sm rounded hover:bg-gray-700">

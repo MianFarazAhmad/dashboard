@@ -17,7 +17,7 @@ export default function Home() {
     setTitle('Dashboard');
   }, []);
   return (
-    <div className="px-6" >
+    <div className="px-6 mdv:px-3" >
       <div className="flex md-hidden">
         <button
           className="p-4  flex items-center "
