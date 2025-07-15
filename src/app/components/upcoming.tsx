@@ -10,6 +10,7 @@ export default function ReminderJobsPanel() {
         
         <div className="mx-5 xs-d-none">
                 <Image
+              
                                    src="/icon/bag.png"
                                    alt="Dashboard Icon"
                                    width={20}
