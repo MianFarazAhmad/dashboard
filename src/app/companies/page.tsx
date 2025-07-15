@@ -211,25 +211,26 @@ const CompaniesList: React.FC = () => {
                                     <td className="px-6 py-4 text-gray-500">{company.caMcp}</td>
                                     <td className="px-6 py-4 text-gray-500">{company.expiry}</td>
                                     <td className="px-6 py-4 text-gray-500">{company.alerts}</td>
-                                    <td className="px-6 py-4 text-gray-500">
+                                    <td className="px-6 relative py-4 text-gray-500">
                                         <div className="relative inline-block">
                                             <select
 
                                                 value={company.status}
                                                 onChange={(e) => handleStatusChange(index, e.target.value as CompanyStatus)}
-                                                className="pl-6 pr-3 w-[7.375rem]   py-1 border  -32 z-10 border-gray-300 rounded-full text-sm text-gray-700 appearance-none bg-white focus:outline-none"
+                                                className="pl-6 pr-3    py-1 border  -32 z-10 border-gray-300 rounded-full text-sm text-gray-700 appearance-none bg-white focus:outline-none"
                                             >
                                                 <option className='font-12 ' value="Active">Active</option>
                                                 <option className='font-12' value="In-Active">In-Active</option>
                                                 <option className='font-12 ' value="In Progress">In Progress</option>
                                             </select>
-                                            <div className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-gray-500">
-                                                <ChevronDown size={16} />
-                                            </div>
+                                        
                                             <span
                                                 className={`absolute top-1/2 left-2 transform -translate-y-1/2 w-2 h-2 rounded-full ${statusDotColors[company.status]}`}
                                             ></span>
                                         </div>
+                                            <div className="pointer-events-none absolute right-0  top-1/2 -translate-y-1/2 text-gray-500">
+                                                <ChevronDown size={16} />
+                                            </div>
                                     </td>
 
                                     <td className="px-6 py-4 relative">

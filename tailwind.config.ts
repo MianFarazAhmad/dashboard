@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+       screens: {
+      'mdv': {'max': '575px'}, // Custom mobile breakpoint
+    },
       fontFamily: {
         nunito: ['var(--font-nunito)', 'sans-serif'],
       },

@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { ChevronDown } from 'lucide-react'; // optional dropdown icon
+import Image from 'next/image';
+import { ChevronDown } from 'lucide-react';
 
 export default function Filter() {
   return (
@@ -27,21 +28,22 @@ export default function Filter() {
 
           {/* Profile Images */}
           <div className="absolute bg-white px-1 py-1 rounded-t-full rounded-br-full -top-3 -right-10 flex space-x-[-8px]">
-            <img
+            <Image
               src="/profile.png"
               alt="User 1"
-              className="w-6 h-6 rounded-full border border-white shadow object-cover"
+              width={24}
+              height={24}
+              className="rounded-full border border-white shadow object-cover"
             />
-            <img
+            <Image
               src="/profile.png"
               alt="User 2"
-              className="w-6 h-6 rounded-full border border-white shadow object-cover"
+              width={24}
+              height={24}
+              className="rounded-full border border-white shadow object-cover"
             />
           </div>
         </div>
-
-        {/* Optional: Secondary Button */}
-      
       </div>
 
       {/* Right Side */}
