@@ -37,7 +37,7 @@ const formatLabel = (value: ReactNode): ReactNode =>
 
 export default function ComplianceChart() {
   return (
-    <div className="bg-white rounded-lg text-14 shadow w-full mx-auto">
+    <div className="bg-white h-[100%] rounded-lg text-14 shadow w-full mx-auto">
       <div className="px-6 pt-6 mb-2 flex justify-between">
         <h2 className="font-semibold text-18 mb-1">Key Compliance Metrics</h2>
         <div className="flex xs-d-none items-center gap-6 text-sm text-gray-600">
@@ -63,7 +63,7 @@ export default function ComplianceChart() {
         </div>
       </div>
 
-      <div className="w-full mt-0 mr-0 mb-0  -ml-5 pr-0 ">
+      <div className="w-full mt-0 mr-0 mb-0 mdv:h-[15rem] -ml-5 pr-0 md:h-[19rem] lg:h-[16.8rem] xl:h-[18.125rem]">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={data} margin={{ top: 20, right: 0, left: 0, bottom: 0 }}>
             <defs>
@@ -131,7 +131,6 @@ export default function ComplianceChart() {
             </Area>
           </AreaChart>
         </ResponsiveContainer>
-        <div className="flex-grow"></div>
       </div>
     </div>
   );

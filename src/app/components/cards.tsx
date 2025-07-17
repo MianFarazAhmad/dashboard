@@ -7,7 +7,7 @@ import CountUp from 'react-countup';
 function Cards() {
   return (
     <div className="">
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 pt-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 pt-5 gap-4">
         {/* Active Clients */}
         <div className="bg-white rounded-lg flex flex-col p-5">
           <div className="flex justify-between items-center mb-2">
