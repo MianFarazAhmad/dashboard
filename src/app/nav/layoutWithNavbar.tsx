@@ -13,7 +13,7 @@ export default function LayoutWithNavbar({ children }: { children: React.ReactNo
       <div className="xs-d-none">
         <Sidebar />
       </div>
-      <main className="xl:ml-[15rem] bg-[#F4F4F4] min-h-screen">
+      <main className=" bg-[#F4F4F4] min-h-screen">
         <div className="xs-d-none">
           <Navbar title={title} />
         </div>

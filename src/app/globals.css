@@ -45,6 +45,9 @@ display: none;
   .md-hidden {
 display: none;
   }
+  main{
+    margin-left: 15rem !important;
+  }
 }
 /* styles/globals.css or wherever you keep global styles */
 
