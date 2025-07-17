@@ -63,7 +63,7 @@ export default function ComplianceChart() {
         </div>
       </div>
 
-      <div className="w-full mt-0 mr-0 mb-0 mdv:h-[15rem] -ml-5 pr-0 md:h-[19rem] lg:h-[16.8rem] xl:h-[18.125rem]">
+      <div className="w-full mt-0 mr-0 mb-0  -ml-5 pr-0 ">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={data} margin={{ top: 20, right: 0, left: 0, bottom: 0 }}>
             <defs>
@@ -131,6 +131,7 @@ export default function ComplianceChart() {
             </Area>
           </AreaChart>
         </ResponsiveContainer>
+        <div className="flex-grow"></div>
       </div>
     </div>
   );
